@@ -10,7 +10,7 @@ Prefer explicit terraform version to not confuse the remote tfstate:
 As new versions may introduce BWIC changes how the state is handled.
 
 If `brew` is not available, you may download `tfenv` for your OS at
-(tfenv releases)[https://github.com/tfutils/tfenv/releases]
+[tfenv releases](https://github.com/tfutils/tfenv/releases)
 
 Install Azure CLI:
 
@@ -36,13 +36,6 @@ Prefer running this manually only for dev:
 For other environments run the Azure DevOps pipeline for the specific API.
 
 
-## Extra: Run static analysis checks before committing
-
-    brew install wata727/tflint/tflint liamg/tfsec/tfsec
-    tflint terraform/
-    tfsec terraform/
-
-
 ## TODO
 
 - Add production environment to Azure DevOps pipeline yml
@@ -51,3 +44,12 @@ For other environments run the Azure DevOps pipeline for the specific API.
 - Add support for updating API's named values from Key Vault
   - Create Key Vault
   - Use shell provider in TF modules to get the key?
+
+
+## Extra tips for writing terraform modules
+
+Run static analysis checks before committing:
+
+    brew install wata727/tflint/tflint liamg/tfsec/tfsec
+    tflint terraform/
+    tfsec terraform/
