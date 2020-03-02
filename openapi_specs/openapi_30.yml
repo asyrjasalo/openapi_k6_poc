@@ -18,52 +18,72 @@ paths:
             enum:
               - 200
             default: 200
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /get:
     get:
       description: Returns GET data.
       operationId: /get
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /post:
     post:
       description: Returns POST data.
       operationId: /post
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /patch:
     patch:
       description: Returns PATCH data.
       operationId: /patch
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /put:
     put:
       description: Returns PUT data.
       operationId: /put
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /delete:
     delete:
       description: Returns DELETE data.
       operationId: /delete
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /xml:
     get:
       description: Returns some XML.
       operationId: /xml
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /ip:
     get:
       description: Returns origin IP.
       operationId: /ip
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /user-agent:
     get:
       description: Returns user agent string.
       operationId: /user-agent
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /headers:
     get:
       description: Returns headers dictionary.
       operationId: /headers
-      responses: {}
+      responses:
+        '200':
+          description: OK
   "/delay/{seconds}":
     get:
       description: Delays responding for n–10 seconds.
@@ -78,7 +98,9 @@ paths:
             enum:
               - 2
             default: 2
-      responses: {}
+      responses:
+        '200':
+          description: OK
   "/cache/{maxAge}":
     get:
       operationId: /cache
@@ -93,22 +115,30 @@ paths:
             enum:
               - 10
             default: 10
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /uuid:
     get:
       operationId: /uuid
       description: Returns UUID4.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /anything:
     get:
       operationId: /anything
       description: Returns request data, including method used.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /gzip:
     get:
       operationId: /gzip
       description: Returns gzip-encoded data.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   "/base64/{value}":
     get:
       operationId: /base64
@@ -121,22 +151,30 @@ paths:
           schema:
             type: string
             default: aGVsbG8gd29ybGQNCg%3D%3D
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /deflate:
     get:
       operationId: /deflate
       description: Returns deflate-encoded data.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /brotli:
     get:
       operationId: /brotli
       description: Returns brotli-encoded data.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /response-headers:
     get:
       operationId: /response-headers
       description: Returns key-value query parameters as response headers.
-      responses: {}
+      responses:
+        '200':
+          description: OK
   "/bytes/{number}":
     get:
       operationId: /bytes
@@ -149,7 +187,9 @@ paths:
           schema:
             type: string
             default: "1024"
-      responses: {}
+      responses:
+        '200':
+          description: OK
   /redirect-to:
     get:
       operationId: /redirect-to
@@ -162,7 +202,9 @@ paths:
           schema:
             type: string
             default: http://example.com
-      responses: {}
+      responses:
+        '200':
+          description: OK
   "/stream/{number}":
     get:
       operationId: /stream
@@ -175,7 +217,9 @@ paths:
           schema:
             type: number
             default: "10"
-      responses: {}
+      responses:
+        '200':
+          description: OK
 servers:
   - url: http://httpbin.org
   - url: https://httpbin.org
