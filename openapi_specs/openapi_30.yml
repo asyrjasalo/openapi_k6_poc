@@ -251,6 +251,3 @@ paths:
           description: Not Found
         '500':
           description: Internal Server Error
-servers:
-  - url: http://httpbin.org
-  - url: https://httpbin.org
