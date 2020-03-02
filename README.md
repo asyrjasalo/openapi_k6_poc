@@ -15,7 +15,7 @@ Setup Python 3 venv:
 
 Run:
 
-    schemathesis run -c all openapi_specs/openapi_30.yml \
+    schemathesis run --cheks all openapi_specs/openapi_30.yml \
       --base-url=http://localhost:8080 \
       --hypothesis-max-examples=100
 
@@ -23,14 +23,14 @@ Run:
 
 ## OpenAPI -> Postman
 
-Run `npm install` and:
+After `npm install` run:
 
-    ./node_modules/.bin/openapi2postmanv2 -s openapi_specs/openapi_30.yml -o postman21.json --pretty
+    npm run openapi2postmanv2 -- -s openapi_specs/openapi_30.yml -o postman21.json --pretty
 
 
 
 ## postman -> k6
 
-Run `npm install` and:
+After `npm install` run:
 
-    ./node_modules/.bin/postman-to-k6 -i 100 postman21.json -o k6_script.js
+    npm run postman-to-k6 -- -i 100 postman21.json -o k6_script.js

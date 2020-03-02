@@ -16,154 +16,154 @@ postman[Symbol.for("initial")]({
 export default function() {
   postman[Request]({
     name: "/status",
-    id: "40aee45a-c07b-4174-8ece-1a3083795e97",
+    id: "5e097bdc-458d-4f2e-a517-0f00bcfa3f75",
     method: "GET",
     address: "{{baseUrl}}/status/<number>"
   });
 
   postman[Request]({
     name: "/get",
-    id: "f1a4fd4e-860f-479c-b7d2-daa29a171941",
+    id: "2c2fea32-b0e2-4600-bdf4-f3f3cd61a853",
     method: "GET",
     address: "{{baseUrl}}/get"
   });
 
   postman[Request]({
     name: "/post",
-    id: "3d8b3e2e-f47d-4a92-b9f0-f87002864b7f",
+    id: "ab7de142-dcf7-4386-9be7-71204e2c0784",
     method: "POST",
     address: "{{baseUrl}}/post"
   });
 
   postman[Request]({
     name: "/patch",
-    id: "4fdda4e2-3245-4c9d-a18b-01af37843675",
+    id: "3c8fdc96-99cc-4894-8967-a01aaa86356b",
     method: "PATCH",
     address: "{{baseUrl}}/patch"
   });
 
   postman[Request]({
     name: "/put",
-    id: "25f3b5bb-d446-423e-8db4-2e09452c3bf7",
+    id: "3005498c-6951-4e31-bca5-a6e797d9ced0",
     method: "PUT",
     address: "{{baseUrl}}/put"
   });
 
   postman[Request]({
     name: "/delete",
-    id: "2915c59c-a961-4f23-9375-530ea9cabb26",
+    id: "009f6067-6a35-497b-9444-74ed529c2235",
     method: "DELETE",
     address: "{{baseUrl}}/delete"
   });
 
   postman[Request]({
     name: "/xml",
-    id: "e7ddf23f-15ee-4e94-b09d-66ab73ed8fc0",
+    id: "a9eae62b-35bf-4e57-a742-afc16cee92a4",
     method: "GET",
     address: "{{baseUrl}}/xml"
   });
 
   postman[Request]({
     name: "/ip",
-    id: "fa915a53-5a4a-4cbb-86d5-72e5ac18d9b8",
+    id: "418c7a68-601a-49f6-8b42-2b2f34ef9a24",
     method: "GET",
     address: "{{baseUrl}}/ip"
   });
 
   postman[Request]({
     name: "/user-agent",
-    id: "f6c08c1e-3b40-45ca-a21f-dedfb4a6468b",
+    id: "54b67491-5864-4410-8b1e-a8fb6d6c8cd4",
     method: "GET",
     address: "{{baseUrl}}/user-agent"
   });
 
   postman[Request]({
     name: "/headers",
-    id: "6be071b7-0ef1-4b69-9827-581bba5bf274",
+    id: "36d9217f-ffbd-468a-9b2b-92179b3735c5",
     method: "GET",
     address: "{{baseUrl}}/headers"
   });
 
   postman[Request]({
     name: "/delay",
-    id: "fcaea5a7-152d-401e-9f81-4059626ba746",
+    id: "1ea2c9c1-a2dd-4412-ad78-753baaa772cf",
     method: "GET",
     address: "{{baseUrl}}/delay/:seconds"
   });
 
   postman[Request]({
     name: "/cache",
-    id: "1a6fc253-cc93-4534-9e0d-090eddd30b7c",
+    id: "8fe4ecac-1b14-433f-a1ee-985a69adc6ba",
     method: "GET",
     address: "{{baseUrl}}/cache/:maxAge"
   });
 
   postman[Request]({
     name: "/uuid",
-    id: "f35b7856-35f3-47e5-9a4c-9de1bf7a48ad",
+    id: "bc781596-edcd-42cc-b69d-f5daf94c1f8e",
     method: "GET",
     address: "{{baseUrl}}/uuid"
   });
 
   postman[Request]({
     name: "/anything",
-    id: "7aef9e17-845f-485a-8b8f-94ed34601475",
+    id: "8545f93b-f62e-44d5-9b45-e01e042ad41d",
     method: "GET",
     address: "{{baseUrl}}/anything"
   });
 
   postman[Request]({
     name: "/gzip",
-    id: "b7dec360-b9ac-46bb-adc3-ebc3d1c0ba50",
+    id: "abcad955-d746-4d50-9b1d-5f983d713d34",
     method: "GET",
     address: "{{baseUrl}}/gzip"
   });
 
   postman[Request]({
     name: "/base64",
-    id: "e074927f-8af4-47ff-b9f7-2937db30b89a",
+    id: "f69acfcf-acc3-47a5-9b21-7a5a01988524",
     method: "GET",
     address: "{{baseUrl}}/base64/aGVsbG8gd29ybGQNCg%3D%3D"
   });
 
   postman[Request]({
     name: "/deflate",
-    id: "8c5221fa-a770-4c7b-b42a-73c056cddac0",
+    id: "3c5ed0a4-497c-46d0-bb0c-943b31a69f06",
     method: "GET",
     address: "{{baseUrl}}/deflate"
   });
 
   postman[Request]({
     name: "/brotli",
-    id: "3ff8e290-9038-4dbb-83bd-132df8d15eda",
+    id: "80d4c2c9-688d-40eb-9053-32859ca445d6",
     method: "GET",
     address: "{{baseUrl}}/brotli"
   });
 
   postman[Request]({
     name: "/response-headers",
-    id: "c44e681b-6ea0-4181-80d9-7d848e173bd5",
+    id: "d9ae7859-df4f-473b-9c99-79f6d59c46de",
     method: "GET",
     address: "{{baseUrl}}/response-headers"
   });
 
   postman[Request]({
     name: "/bytes",
-    id: "58483370-bcec-4db2-a173-72ee1f4d5218",
+    id: "b36f6f9c-5018-4275-8173-89a8c3a97a5d",
     method: "GET",
     address: "{{baseUrl}}/bytes/1024"
   });
 
   postman[Request]({
     name: "/redirect-to",
-    id: "4a76e163-451f-4a0f-acae-ba77d12dbcdb",
+    id: "ca17a00a-292a-4078-a929-5cd3a433430d",
     method: "GET",
     address: "{{baseUrl}}/redirect-to?url=http://example.com"
   });
 
   postman[Request]({
     name: "/stream",
-    id: "6f7f890d-db4c-490f-b0b6-ff06cb317395",
+    id: "c210dbe9-09bd-4ced-9bca-b7eb833633bd",
     method: "GET",
     address: "{{baseUrl}}/stream/10"
   });

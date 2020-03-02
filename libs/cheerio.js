@@ -4263,7 +4263,13 @@ function renderComment(elem) {
 
 },{"domelementtype":44,"entities":55}],16:[function(require,module,exports){
 module.exports={
-  "_from": "cheerio@^1.0.0-rc.2",
+  "_args": [
+    [
+      "cheerio@1.0.0-rc.3",
+      "/Users/asyrjasalo/rnd/openapi_k6_poc"
+    ]
+  ],
+  "_from": "cheerio@1.0.0-rc.3",
   "_id": "cheerio@1.0.0-rc.3",
   "_inBundle": false,
   "_integrity": "sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==",
@@ -4273,22 +4279,21 @@ module.exports={
     "entities": "1.1.2"
   },
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "cheerio@^1.0.0-rc.2",
+    "raw": "cheerio@1.0.0-rc.3",
     "name": "cheerio",
     "escapedName": "cheerio",
-    "rawSpec": "^1.0.0-rc.2",
+    "rawSpec": "1.0.0-rc.3",
     "saveSpec": null,
-    "fetchSpec": "^1.0.0-rc.2"
+    "fetchSpec": "1.0.0-rc.3"
   },
   "_requiredBy": [
     "/postman-to-k6"
   ],
   "_resolved": "https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz",
-  "_shasum": "094636d425b2e9c0f4eb91a46c05630c9a1a8bf6",
-  "_spec": "cheerio@^1.0.0-rc.2",
-  "_where": "/Users/asyrjasalo/rnd/openapi_k6_poc/node_modules/postman-to-k6",
+  "_spec": "1.0.0-rc.3",
+  "_where": "/Users/asyrjasalo/rnd/openapi_k6_poc",
   "author": {
     "name": "Matt Mueller",
     "email": "mattmuelle@gmail.com",
@@ -4297,7 +4302,6 @@ module.exports={
   "bugs": {
     "url": "https://github.com/cheeriojs/cheerio/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "css-select": "~1.2.0",
     "dom-serializer": "~0.1.1",
@@ -4306,7 +4310,6 @@ module.exports={
     "lodash": "^4.15.0",
     "parse5": "^3.0.1"
   },
-  "deprecated": false,
   "description": "Tiny, fast, and elegant implementation of core jQuery designed specifically for the server",
   "devDependencies": {
     "benchmark": "^2.1.0",
