@@ -36,18 +36,18 @@ Prefer running this manually only for dev:
 For other environments run the Azure DevOps pipeline for the specific API.
 
 
-## Bonus: Run static analysis checks before committing
+## Extra: Run static analysis checks before committing
 
     brew install wata727/tflint/tflint liamg/tfsec/tfsec
-    tflint .
-    tfsec .
+    tflint terraform/
+    tfsec terraform/
 
 
 ## TODO
 
-- Add production environment to Azure DevOps pipelne
-- Add tests to pipeline using schemathesis
-- Add pre-commit for tflint and validate spec before git commit
+- Add production environment to Azure DevOps pipeline yml
+- Export spec from OpenAPI for tests
+- Run schemathesis tests based on OpenAPI spec to test and stg
 - Add support for updating API's named values from Key Vault
   - Create Key Vault
   - Use shell provider in TF modules to get the key?
