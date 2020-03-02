@@ -7,7 +7,7 @@ Run httpbin locally on Docker:
 
 ## schemathesis
 
-Setup Python 3 venv:
+Setup a new Python3 venv:
 
     python3 -m venv .venv/dev
     source .venv/dev/bin/activate
@@ -15,7 +15,7 @@ Setup Python 3 venv:
 
 Run:
 
-    schemathesis run --cheks all openapi_specs/openapi_30.yml \
+    schemathesis run --checks all openapi_specs/openapi_30.yml \
       --base-url=http://localhost:8080 \
       --hypothesis-max-examples=100
 
@@ -29,7 +29,7 @@ After `npm install` run:
 
 
 
-## postman -> k6
+## Postman -> k6
 
 After `npm install` run:
 
