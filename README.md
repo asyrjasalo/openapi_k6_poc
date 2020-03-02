@@ -25,7 +25,8 @@ Run:
 
 After `npm install` run:
 
-    npm run openapi2postmanv2 -- -s openapi_specs/openapi_30.yml -o postman21.json --pretty
+    npm run openapi2postmanv2 -- \
+      --spec openapi_specs/openapi_30.yml --output postman21.json --pretty
 
 
 
@@ -33,4 +34,5 @@ After `npm install` run:
 
 After `npm install` run:
 
-    npm run postman-to-k6 -- -i 100 postman21.json -o k6_script.js
+    npm run postman-to-k6 -- \
+      postman21.json --iterations 100 --output k6_script.js
