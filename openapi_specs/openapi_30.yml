@@ -15,12 +15,11 @@ paths:
           required: true
           schema:
             type: number
-            enum:
-              - 200
-            default: 200
       responses:
         '200':
           description: OK
+        '400':
+          description: Bad request
   /get:
     get:
       description: Returns GET data.
@@ -94,7 +93,7 @@ paths:
           description: ""
           required: true
           schema:
-            type: string
+            type: integer
             enum:
               - 2
             default: 2
@@ -111,7 +110,7 @@ paths:
           description: ""
           required: true
           schema:
-            type: string
+            type: integer
             enum:
               - 10
             default: 10
@@ -153,7 +152,15 @@ paths:
             default: aGVsbG8gd29ybGQNCg%3D%3D
       responses:
         '200':
-          description: OK
+          description: Ok
+        '302':
+          description: Redirected
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
   /deflate:
     get:
       operationId: /deflate
@@ -189,7 +196,15 @@ paths:
             default: "1024"
       responses:
         '200':
-          description: OK
+          description: Ok
+        '302':
+          description: Redirected
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
   /redirect-to:
     get:
       operationId: /redirect-to
@@ -204,7 +219,15 @@ paths:
             default: http://example.com
       responses:
         '200':
-          description: OK
+          description: Ok
+        '302':
+          description: Redirected
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
   "/stream/{number}":
     get:
       operationId: /stream
@@ -219,7 +242,15 @@ paths:
             default: "10"
       responses:
         '200':
-          description: OK
+          description: Ok
+        '302':
+          description: Redirected
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
 servers:
   - url: http://httpbin.org
   - url: https://httpbin.org
