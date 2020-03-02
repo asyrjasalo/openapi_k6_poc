@@ -1,0 +1,25 @@
+{
+  "name": "openapi_k6_poc",
+  "version": "1.0.0",
+  "description": "## schemathesis",
+  "main": "k6_script.js",
+  "dependencies": {
+    "newman": "^4.6.0",
+    "openapi-to-postmanv2": "^1.1.9",
+    "postman-to-k6": "^0.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asyrjasalo/openapi_k6_poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asyrjasalo/openapi_k6_poc/issues"
+  },
+  "homepage": "https://github.com/asyrjasalo/openapi_k6_poc#readme"
+}
