@@ -1,0 +1,669 @@
+{
+    "item": [
+        {
+            "id": "1edac517-16ca-4085-8fcb-e294c981177e",
+            "name": "/status",
+            "request": {
+                "name": "/status",
+                "description": {
+                    "content": "Returns provided HTTP Status code.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "status",
+                        ":code"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) HTTP code to return.",
+                            "type": "any",
+                            "value": 200,
+                            "key": "code"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "4e4252eb-3667-48e9-a510-a08ea6eb8592",
+            "name": "/get",
+            "request": {
+                "name": "/get",
+                "description": {
+                    "content": "Returns GET data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "get"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "df621723-bd09-45a8-ab0c-48920ab0f1d5",
+            "name": "/post",
+            "request": {
+                "name": "/post",
+                "description": {
+                    "content": "Returns POST data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "post"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "POST",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "7a99de64-5634-4747-aa6c-da9323d8c510",
+            "name": "/patch",
+            "request": {
+                "name": "/patch",
+                "description": {
+                    "content": "Returns PATCH data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "patch"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "PATCH",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "55702c3c-adee-49a6-a3df-e13a7924185c",
+            "name": "/put",
+            "request": {
+                "name": "/put",
+                "description": {
+                    "content": "Returns PUT data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "put"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "PUT",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "47b9bc55-55df-463e-b5ba-40810d7d1856",
+            "name": "/delete",
+            "request": {
+                "name": "/delete",
+                "description": {
+                    "content": "Returns DELETE data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "delete"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "DELETE",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "91564e40-6648-49c7-b9f7-6186fa46a54d",
+            "name": "/xml",
+            "request": {
+                "name": "/xml",
+                "description": {
+                    "content": "Returns some XML.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "xml"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "b078cde5-b9e8-4e93-981e-fa952fb77743",
+            "name": "/ip",
+            "request": {
+                "name": "/ip",
+                "description": {
+                    "content": "Returns origin IP.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "ip"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "95325693-48d2-44b4-bae3-5a737902f5f3",
+            "name": "/user-agent",
+            "request": {
+                "name": "/user-agent",
+                "description": {
+                    "content": "Returns user agent string.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "user-agent"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "d2fd8018-943a-4ac5-8ed8-7f0934beb2ff",
+            "name": "/headers",
+            "request": {
+                "name": "/headers",
+                "description": {
+                    "content": "Returns headers dictionary.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "headers"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "4d1276d2-6d23-4b27-9543-094b1e969706",
+            "name": "/delay",
+            "request": {
+                "name": "/delay",
+                "description": {
+                    "content": "Delays responding for n–10 seconds.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "delay",
+                        ":seconds"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) ",
+                            "type": "any",
+                            "value": 2,
+                            "key": "seconds"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "c5eb7836-2c1e-417e-a3f1-59a38b1c90d7",
+            "name": "/cache",
+            "request": {
+                "name": "/cache",
+                "description": {
+                    "content": "Sets a Cache-Control header for n seconds.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "cache",
+                        ":maxAge"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) ",
+                            "type": "any",
+                            "value": 10,
+                            "key": "maxAge"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "f19cb32e-9e18-4b31-b32a-b4265cf00680",
+            "name": "/uuid",
+            "request": {
+                "name": "/uuid",
+                "description": {
+                    "content": "Returns UUID4.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "uuid"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "080df7ae-7fda-4ce2-99c9-4ad2480d7cd1",
+            "name": "/anything",
+            "request": {
+                "name": "/anything",
+                "description": {
+                    "content": "Returns request data, including method used.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "anything"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "67466ce4-540d-4196-a0b2-5e427b59f286",
+            "name": "/gzip",
+            "request": {
+                "name": "/gzip",
+                "description": {
+                    "content": "Returns gzip-encoded data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "gzip"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "823e0579-69b7-4aaf-8099-8614bb079e81",
+            "name": "/base64",
+            "request": {
+                "name": "/base64",
+                "description": {
+                    "content": "Decodes base64url-encoded string.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "base64",
+                        ":value"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Base64 encoded string.",
+                            "type": "any",
+                            "value": "aGVsbG8gd29ybGQNCg%3D%3D",
+                            "key": "value"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "989aad5c-8b6d-41cb-9ac4-aacddcc4a9cb",
+            "name": "/deflate",
+            "request": {
+                "name": "/deflate",
+                "description": {
+                    "content": "Returns deflate-encoded data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "deflate"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "53e05192-c049-412b-aa90-b8cad72c5237",
+            "name": "/brotli",
+            "request": {
+                "name": "/brotli",
+                "description": {
+                    "content": "Returns brotli-encoded data.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "brotli"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "fe2ab5e7-d7f5-43d9-be99-b2ab23a1d1c2",
+            "name": "/response-headers",
+            "request": {
+                "name": "/response-headers",
+                "description": {
+                    "content": "Returns key-value query parameters as response headers.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "response-headers"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "5f51060e-274d-444d-aa1c-9bce7279d20c",
+            "name": "/bytes",
+            "request": {
+                "name": "/bytes",
+                "description": {
+                    "content": "Generates n random bytes of binary data",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "bytes",
+                        ":number"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Number of bytes to return.",
+                            "type": "any",
+                            "value": "1024",
+                            "key": "number"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "98df15d0-91e8-4a86-81d7-f5b5a9f118dc",
+            "name": "/redirect-to",
+            "request": {
+                "name": "/redirect-to",
+                "description": {
+                    "content": "302 redirects to a URL provided in query",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "redirect-to"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "description": "(Required) Redirect target",
+                            "key": "url",
+                            "value": "http://example.com"
+                        }
+                    ],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "104e309a-2475-4891-adb9-1d09292f0839",
+            "name": "/stream",
+            "request": {
+                "name": "/stream",
+                "description": {
+                    "content": "Streams min(number, 100) lines.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "stream",
+                        ":number"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "description": "(Required) Number of lines to stream.",
+                            "type": "any",
+                            "value": "10",
+                            "key": "number"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": {
+                    "type": "noauth"
+                }
+            },
+            "response": [],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "id": "baseUrl",
+            "type": "string",
+            "value": "http://localhost:8080"
+        }
+    ],
+    "info": {
+        "_postman_id": "8f7491de-ba90-4120-a400-8ef15298fadd",
+        "name": "httpbin.org",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "API Management facade for a very handy and free online HTTP tool.",
+            "type": "text/plain"
+        }
+    }
+}
