@@ -7,8 +7,8 @@
     "postman-to-k6": "^0.4.0"
   },
   "scripts": {
-    "openapi2postmanv2": "node_modules/.bin/openapi2postmanv2",
-    "postman-to-k6": "node_modules/.bin/postman-to-k6"
+    "openapi2postmanv2": "node node_modules/.bin/openapi2postmanv2",
+    "postman-to-k6": "node node_modules/.bin/postman-to-k6"
   },
   "repository": {
     "type": "git",

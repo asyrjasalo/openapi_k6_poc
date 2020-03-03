@@ -1,4 +1,4 @@
-# Automated testing for APIs
+# Test generation from OpenAPI spec
 
 Run httpbin locally on Docker:
 
@@ -36,3 +36,10 @@ After `npm install` run:
 
     npm run postman-to-k6 -- \
       postman21.json --iterations 100 --output k6_script.js
+
+
+## K6
+
+Execute K6 tests:
+
+    k6 run k6_script.js

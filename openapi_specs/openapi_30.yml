@@ -3,6 +3,8 @@ info:
   title: httpbin.org
   description: API Management facade for a very handy and free online HTTP tool.
   version: "1.0"
+servers:
+  - url: http://localhost:8080
 paths:
   "/status/{code}":
     get:

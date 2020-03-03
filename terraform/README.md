@@ -1,4 +1,4 @@
-# Updating single APIM product's APIs from pipeline
+# Azure APIM resources
 
 ## Setup tools locally
 
